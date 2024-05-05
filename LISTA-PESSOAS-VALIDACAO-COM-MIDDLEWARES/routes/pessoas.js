@@ -84,7 +84,7 @@ router.delete('/pessoasComValidacao/:id', validarPessoas, (req, res) => {
     res.status(200).json({ mensagem: "Pessoa excluída com sucesso!" })
 })
 
-// UPDATE -> Atualizar pessoa
+// UPDATE -> Atualizar pessoas
 router.put('/pessoasComValidacao/:id', validarAtributos, validarPessoas, (req, res) => {
     const id = req.params.id
     const novosDados = req.body
